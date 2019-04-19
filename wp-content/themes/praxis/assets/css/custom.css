@@ -1,0 +1,70 @@
+/*
+|--------------------------------------------------------------------------|
+|                     Place your custom styles here                        |
+|--------------------------------------------------------------------------|
+*/
+/********Post Navigation********/
+
+.post-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.nav-previous a,
+.nav-next a {
+    border: 1px solid #00ccff;
+    padding: 8px 20px;
+    display: inline-block;
+    line-height: 22px;
+    color: #00ccff;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+.post-navigation>div {
+    display: inline-block;
+}
+.nav-previous a:hover,
+.nav-next a:hover {
+    background: #e54148;
+    color: #fff;
+    border-color:  #e54148;
+}
+.nav-previous a:before {
+    content: "\f100";
+    font-family: 'FontAwesome';
+    margin-right: 4px;
+}
+.nav-next a:after {
+    content: "\f101";
+    font-family: 'FontAwesome';
+    margin-left: 4px;
+}
+.nav-all-post {
+    min-width: 120px;
+    text-align: center;
+    margin: 0 25px;
+}
+.nav-all-post a {
+    margin: 0 3px;
+    padding: 0 2px;
+    font-size: 15px;
+    font-weight: 300;
+    border: 1px solid #00ccff;
+    border-radius: 5px;
+    color: #00ccff;
+    display: inline-block;
+    height: 40px;
+    width: 35px;
+    line-height: 40px;
+    text-align: center;
+}
+.nav-all-post a:hover,
+.nav-all-post .active-post {
+    background: #e54148;
+    color: #fff !important;
+    border-color: #e54148;
+}
